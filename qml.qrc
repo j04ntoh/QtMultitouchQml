@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>ScrollText.qml</file>
+        <file>ScrollArea.qml</file>
     </qresource>
 </RCC>

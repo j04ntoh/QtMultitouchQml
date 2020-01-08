@@ -3,11 +3,24 @@ import QtQuick.Window 2.13
 
 Window {
     visible: true
-    width: 640
-    height: 480
-    title: qsTr("Hello World")
+    width: 1024
+    height: 768
+    title: qsTr("Scroll Sample")
 
-    ScrollText{}
-    ScrollText{y:250}
+    Text {
+        id: txtScrollText
+        text: qsTr("Correct")
+        x:5
+    }
+    ScrollArea{y:20}
+    ScrollArea{y:250}
+
+    Text {
+        id: txtScrollArea
+        text: qsTr("Wrong")
+        x:460
+    }
+    ScrollText{x:450; y:20}
+    ScrollText{x:450; y:250}
 
 }
